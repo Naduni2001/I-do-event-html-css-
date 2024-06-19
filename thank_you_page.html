@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You Page</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #f4a3bf;
+            margin: 0;
+            padding: 0;
+        }
+
+        .thank-you-container {
+            height: 100%;
+            position: relative;
+        }
+
+        .thank-you-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #d7729c;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #322b2b;
+        }
+
+        /* Add any additional styling as per  design preference */
+        .logo {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 18px;
+            color: #322b2b;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-box">
+            <h2>Thank You for Contacting Us!</h2>
+            <p>We appreciate your interest in our services. We will get back to you soon.</p>
+            <a href="#" class="logo">
+                <img src="Images/Logo.png" alt="Logo">
+                <span>I DO EVENT</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        // Redirect to index.html after 2 minutes
+        setTimeout(function() {
+            window.location.href = 'IDOevent.html';
+        }, 15000); // 15 seconds in milliseconds
+    </script>
+</body>
+</html>
